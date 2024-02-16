@@ -24,12 +24,12 @@
 <body>
     <main class="bg-[#010313] bg-[url(images/background.png)] bg-no-repeat min-h-screen bg-center">
         <!-- home section -->
-        <section id="home" class=" min-h-screen hidden">
+        <section id="home" class=" min-h-screen ">
             <!-- home screen text part -->
             <div class="text-white min-h-screen flex flex-col items-center justify-center gap-5">
                 <h1 class="text-8xl font-anton font-normal">Alphabet Clash</h1>
                 <p class="text-xl font-poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn">Play Now</button>
+                <button id="play-now" class="btn" onclick="play()">Play Now</button>
             </div>
         </section>
         <!-- play ground section -->
@@ -97,7 +97,7 @@
         </section>
         
         <!-- score section -->
-        <section id="score" class="flex flex-col justify-center min-h-screen items-center ">
+        <section id="score" class="flex flex-col justify-center min-h-screen items-center hidden">
             <div class="font-poppins text-[#FFFFFF] space-y-5 text-center bg-[#FFFFFF33] py-5 px-7 rounded-lg">
                 <h1 class="text-6xl">
                     <span class="font-extrabold">Score :</span>
@@ -109,6 +109,7 @@
         </section>
     </main>
     
-
+ <script src="script/utilitis.js"></script>   
+<script src="script/clash.js"></script>
 </body>
 </html>
